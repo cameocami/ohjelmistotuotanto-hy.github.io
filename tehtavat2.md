@@ -232,7 +232,7 @@ Tutustutaan nyt staattisen analyysin työkaluun nimeltään [Pylint](https://pyl
 
 Konfiguraationa käytettävän _.pylintrc_-tiedoston sisältö on toistaiseksi [tämän]({{site.python_exercise_repo_url}}/blob/main/viikko2/varasto/.pylintrc) tiedoston sisällön mukainen.
 
-Pylintin tarkistamat säännöt konfiguroidaan _.pylintrc_-tiedostoon oikeiden osioiden alle. `[main]`-osio sisältää yleisiä konfiguraatioita, kuten mitkä hakemistot tai tiedostot pitäisi jättää tarkistuksien ulkopuolelle. `[MESSAGE CONTROL]`-osiossa taas voidaan määritellä esimerkiksi tarkistuksia, joista ei tarvitse huomauttaa. Loput osiot ovat eri sääntöjen konfigurointia varten, jotka on dokumentoitu Pylintin [dokumentaatiossa](https://pylint.readthedocs.io/en/stable/user_guide/configuration/all-options.html).
+Pylintin tarkistamat säännöt konfiguroidaan _.pylintrc_-tiedostoon oikeiden osioiden alle. `[MASTER]`-osio sisältää yleisiä konfiguraatioita, kuten mitkä hakemistot tai tiedostot pitäisi jättää tarkistuksien ulkopuolelle. `[MESSAGE CONTROL]`-osiossa taas voidaan määritellä esimerkiksi tarkistuksia, joista ei tarvitse huomauttaa. Loput osiot ovat eri sääntöjen konfigurointia varten, jotka on dokumentoitu Pylintin [dokumentaatiossa](https://pylint.readthedocs.io/en/stable/user_guide/configuration/all-options.html).
 
 Jos haluamme esimerkiksi asettaa funktioiden ja metodien argumenttien [maksimilukumäärä neljään](https://pylint.readthedocs.io/en/stable/user_guide/configuration/all-options.html#max-args), voimme lisätä sen `[DESIGN]`-osioon seuraavasti:
 
